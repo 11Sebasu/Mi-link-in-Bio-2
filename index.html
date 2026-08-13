@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="img/sora kasugano.jpg">
+    <title>depre??edd</title>
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Canvas para la lluvia de interrogantes -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Reproductor de Música Flotante (Esquina Superior Derecha) -->
+    <div class="music-card top-right-music">
+        <div class="music-info">
+            <i class="fas fa-music music-icon"></i>
+            <div class="music-text">
+                <span class="music-title">Lo-Fi Rain (Prod. Lee)</span>
+                <span class="music-artist">Reproduciendo ahora</span>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button id="play-music-btn" class="music-play-btn">
+                <i class="fas fa-play" id="play-icon"></i>
+            </button>
+            <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.05" value="0.5">
+        </div>
+        <audio id="bg-audio" loop>
+            <source src="audio/rain.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="main-container">
+        <!-- Imagen de Perfil -->
+        <div class="profile-picture-container">
+            <img src="img/sora kasugano.jpg" alt="Avatar" class="profile-picture">
+        </div>
+
+        <!-- Nombre y Título -->
+        <h1 class="name">depre??edd</h1>
+        <p class="tagline">Shi yo soy mogger y lindo, que pasa con ustedes que son sub5 y feitos.</p>
+
+        <!-- Contenedor de Botones -->
+        <div class="button-container">
+            <!-- Botón de Discord con función de copiar -->
+            <button class="btn btn-discord btn-copy" data-copy="depreed.wft">
+                <i class="fab fa-discord"></i> Discord <span class="copy-feedback">¡Username Copiado!</span>
+            </button>
+            
+            <!-- Enlace de GitHub -->
+            <a href="https://github.com/11Sebasu" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            
+            <!-- Enlace de Steam -->
+            <a href="https://steamcommunity.com/profiles/76561199223009555" target="_blank" rel="noopener noreferrer" class="btn btn-steam">
+                <i class="fab fa-steam"></i> Steam
+            </a>
+        </div>
+
+<!-- Video Central con Controles de Audio y Reproducción -->
+<div class="media-box video-container center-video">
+    <video id="center-video-element" src="media/oliwis.mp4" autoplay loop></video>
+    <div class="video-controls-overlay">
+        <button id="video-play-btn" class="mute-btn" title="Reproducir/Pausar">
+            <i class="fas fa-pause" id="video-play-icon"></i>
+        </button>
+        <button id="video-mute-btn" class="mute-btn" title="Activar/Desactivar audio">
+            <i class="fas fa-volume-mute" id="video-mute-icon"></i>
+        </button>
+        <input type="range" id="video-volume-slider" class="volume-slider" min="0" max="1" step="0.05" value="0">
+    </div>
+</div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 depre??edd</p>
+        </footer>
+    </div>
+
+    <!-- Enlace al JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
